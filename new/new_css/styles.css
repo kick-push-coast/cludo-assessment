@@ -250,6 +250,9 @@ a:hover {
 
 .search-results-more:hover {
    background-color: #377def;
+}
+
+.search-results-more:hover > a {
    color: #fff;
 }
 
@@ -321,3 +324,4 @@ a:hover {
    .row {
       padding: 0 10px !important;
    }
+}
