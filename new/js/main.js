@@ -14,9 +14,9 @@ search_narrow.addEventListener("click", function(e) {
 
 });
 
-// Set target to entire category node if children clicked
+// Set target to entire category node if label clicked
 function targetSet(target) {
-   if(target.matches(".search-category label, .search-all label")) {
+   if(target.matches("label")) {
       return target.parentNode;
    }
    else {

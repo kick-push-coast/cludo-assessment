@@ -130,7 +130,7 @@ a:hover {
    display: flex;
    justify-content: center;
    text-align: center;
-   padding: 5px;
+   padding: 5px 0 5px 5px;
    margin-bottom: 10px;
    border: 1px solid #e0e0e0;
    background-color: #fafafa;
@@ -151,6 +151,8 @@ a:hover {
    padding: 0;
    flex-grow: 1;
    flex-wrap: wrap;
+   display: flex;
+   justify-content: space-between;
    margin-bottom: -5px;
 }
 
@@ -164,12 +166,12 @@ a:hover {
 }
 
 .search-category {
-   width: 33%;
+   width: calc(100% / 3 - 5px);
    display: inline-block;
    font-size: 12px;
    padding: 5px 0;
    background-color: #bfd3ff;
-   margin-bottom: 5px;
+   margin: 0 5px 5px 0;
 }
 
 .cat-selected {
@@ -296,7 +298,7 @@ a:hover {
 
 @media only screen and (max-width: 992px) {
    .search-category {
-      width: 49%;
+      width: calc(100% / 2 - 5px);
    }
    .search-suggest {
       display: none;
