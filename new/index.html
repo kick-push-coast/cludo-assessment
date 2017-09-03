@@ -42,7 +42,6 @@
 	<link href="new_css/styles.css" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 	<script src="https://use.fontawesome.com/4d7f4b72d9.js"></script>
-	<script src"js/main.js" type="text/javascript"></script>
 
 
 	<script type="text/javascript">
@@ -1043,7 +1042,7 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
 
 	<h2 class="search-narrow-header">Narrow Results</h2>
 	<ul class="search-narrow">
-		<li class="search-all cat-selected"><div>All</div></li>
+		<li class="search-all cat-selected"><label for="catAll">All</label><input type="checkbox" name="cat1" id="cat1"/></li>
 		<ul class="search-categories-list">
 			<li class="search-category"><label for="cat1">News</label><input type="checkbox" name="cat1" id="cat1"/></li>
 			<li class="search-category"><label for="cat2">Classes</label><input type="checkbox" name="cat2" id="cat2"/></li>
@@ -1053,7 +1052,9 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
 			<li class="search-category"><label for="cat6">Events</label><input type="checkbox" name="cat6" id="cat6"/></li>
 		</ul>
 	</ul>
-	<button class="search-narrow-btn">Update</button>
+	<div class="search-narrow-submit">
+		<button class="search-narrow-btn">Update</button>
+	</div>
 </div>
 
 <div class="search-body">
@@ -1262,6 +1263,9 @@ jQuery(function($){ $(".hasTooltip").tooltip({"html": true,"container": "body"})
 <!-- //FOOTER -->
 
 </div>
+
+
+<script src="js/main.js" type="text/javascript"></script>
 
 </body>
 
